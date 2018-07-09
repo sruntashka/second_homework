@@ -14,14 +14,14 @@ defmodule Homework do
     {true,_,_} = _
     
     # From here on, do not use variables. All of these are heavily inspired by elixirkoans
-    _ = true
-    _ = !true
-    2 = 1 + _
-    4.0 = 2 / _
-    6 = 2 * _
-    3 > _
-    "hello world" = _ <> "world"
-    _ = [1, 2] ++ [:a, "b"]
-    _ = [1, 2, 3] -- [3]
+    true = true
+    false = !true
+    2 = 1 + 1
+    4.0 = 2 / 0.5
+    6 = 2 * 3
+    3 > 2
+    "hello world" = "hello" <> "world"
+    [1,2,:a,"b"] = [1, 2] ++ [:a, "b"]
+    [1,2] = [1, 2, 3] -- [3]
   end
 end
